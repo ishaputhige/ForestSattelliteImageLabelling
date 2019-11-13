@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %} AMAZON FROM SPACE {% endblock %}
+{% block body %}
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo"href="{{url_for('index')}}">Amazon From Space</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="{{url_for('index')}}">Home</a></li>
+        
+        <li><a href="{{url_for('stats')}}">Data & Stats</a></li>
+    </ul>
+</nav>
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h1>Amazon From Space</h1>
+        <p>An attempt to tackle deforestation using sattelite image data<br />
+         <a href="#"></a></p>
+        <video autoplay loop muted playsinline src="{{ url_for('static', filename='assests/images/banner.mp4') }}"></video>
+    </div>
+    <video autoplay loop muted playsinline src="{{ url_for('static', filename='assests/images/banner.mp4') }}"></video>
+</section>
+
+<section style="padding: 100px">
+    <div class="input_b">
+        <header>
+            <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+            <h3>Upload Image</h3>
+        </header>
+        
+        <form action="/action_page.php">
+            <input type="file" name="pic" accept="image/*">
+            <br>
+            <p> </p>
+            <input type="submit">
+          </form>
+    </div>
+</section>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+{% endblock %}

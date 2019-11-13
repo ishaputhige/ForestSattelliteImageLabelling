@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="static/main.css">
+{% block body %}
+<div class=im >
+    <img style="padding: auto;" src="{{ url_for('uploaded_file', filename=image)}}" width=250 height=250 />
+
+</div>
+
+
+{% for label in labels %}
+<h1> {{label}} </h1>
+{% endfor %}
+
+{% endblock %}

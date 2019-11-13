@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    h1{
+        color:indianred;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 300%;
+    }
+    h2{
+        color:rgb(50, 133, 133);
+        font-family: monospace;
+        font-size: 200%;
+    }
+    p{
+        color: rgb(36, 119, 139);
+        font-family: serif;
+        font-size: 150%;
+    }
+</style>
+        <a href="{{url_for('index')}}">Home
+            <style>
+                    a:link, a:visited { 
+                      background-color:#6b4092;
+                      color: white;
+                      padding: 15px 25px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                    }
+
+                    a:hover, a:active {
+                      background-color: rgb(179, 38, 33);
+                    }
+            </style></a>
+    <h1><b>Team Members</b></h1>
+    <h2>CHAHAT BINDRA</h2>
+    <p>Enrollment No : E18CSE037<BR>
+    Email ID: CB7932@bennett.edu.in </p>
+    <H2>DHVANI VASHIST</H2>
+    <p>Enrollment No : E18CSE048<BR>
+        Email ID: DV7512@bennett.edu.in
+    </p>
+    <h2>HIMANSHU MITTAL</h3>
+    <p>Enrollment No : E18CSE063<BR>
+        Email ID: HM6729@bennett.edu.in</p>
+    <H2>ISHA PUTHIGE</H4>
+    <p>Enrollment No : E18CSE066<BR>
+        Email ID: IP5314@bennett.edu.in</p>
+
+{% endblock %}
